@@ -31,6 +31,9 @@ module.exports = async (options) => {
 
     const promises = modulesToImport.map((file) => {
       let filepath = globbing ? path.resolve(file) : path.resolve(path.join(options.path, file));
+
+      if (filepath.includes('.d.ts') || filepath.includes('.map')) return;
+
       return new Promise(async (resolve, reject) => {
         if (fs.lstatSync(filepath).isDirectory()) resolve()
 
