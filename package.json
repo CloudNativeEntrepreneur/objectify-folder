@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test-js && npm run test-mjs",
     "test-js": "mocha -R spec --recursive",
-    "test-mjs": "DEBUG=objectify-folder node --experimental-modules test-mjs/test.mjs"
+    "test-mjs": "DEBUG=objectify-folder node --experimental-modules test-mjs/test.mjs",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "folder",
@@ -14,21 +15,19 @@
   ],
   "author": "mateodelnorte",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:mateodelnorte/objectify-folder.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mateodelnorte/objectify-folder/issues"
-  },
-  "homepage": "https://github.com/mateodelnorte/objectify-folder",
+  "homepage": "https://github.com/CloudNativeEntrepreneur/objectify-folder",
   "dependencies": {
-    "debug": "^4.3.2",
-    "glob": "^7.2.0"
+    "debug": "4.3.2",
+    "glob": "7.2.0"
   },
   "devDependencies": {
     "assert": "2.0.0",
     "mocha": "9.1.2",
-    "should": "13.2.3"
+    "should": "13.2.3",
+    "semantic-release": "18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CloudNativeEntrepreneur/objectify-folder.git"
   }
 }
