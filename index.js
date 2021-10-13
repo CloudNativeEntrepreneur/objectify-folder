@@ -29,7 +29,7 @@ module.exports = function (options) {
 
   files.forEach(function (file) {
 
-    if (file === 'index.js' || file === '.DS_Store') return;
+    if (file === 'index.js' || file === '.DS_Store' || file.includes('.d.ts') || file.includes('.map')) return;
     
     var mod;
 
