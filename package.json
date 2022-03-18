@@ -17,7 +17,7 @@
   "license": "ISC",
   "homepage": "https://github.com/CloudNativeEntrepreneur/objectify-folder",
   "dependencies": {
-    "debug": "4.3.3",
+    "debug": "4.3.4",
     "glob": "7.2.0"
   },
   "devDependencies": {
